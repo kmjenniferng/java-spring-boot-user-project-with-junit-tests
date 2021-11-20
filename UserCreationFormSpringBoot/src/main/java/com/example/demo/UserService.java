@@ -44,14 +44,14 @@ public class UserService {
 				.orElseThrow(() -> new IllegalStateException("User with id " + userId + " does not exist"));
 		
 		String nameInput = user.getName();
-		if (nameInput != null && nameInput.length() > 0) userInDB.setName(user.getName());	
+		if (nameInput != null && nameInput.length() > 0) userInDB.setName(nameInput);	
 		
 		String emailInput = user.getEmail();
 		boolean existsEmail = userRepository.findUserByEmail(emailInput);
 		if (existsEmail) {
 			throw new IllegalStateException("Unable to update user email because email is taken: " + emailInput);
 		}
-		userInDB.setEmail(emailInput);	
+		if (emailInput != null && emailInput.length() > 0) userInDB.setEmail(emailInput);
 		userRepository.save(userInDB);
 	}
 }
