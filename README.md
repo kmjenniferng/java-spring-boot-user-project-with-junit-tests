@@ -40,7 +40,7 @@ Expected test result: user data will be shown in response based on provided user
 
 4. **Delete 1 user**
 
-HTTP:DELETE: localhost:8080/user/deleteUser/{person_id}
+HTTP:DELETE: localhost:8080/user/deleteUser/{user_id}
 
 Headers: Key = Content-Type, Value = application/json
 
@@ -48,7 +48,7 @@ Expected test result: a user with provided user id will be removed from MySQL da
 
 5. **Update user name or user email**
 
-HTTP:PUT: localhost:8080/user/updateUser/{person_id}
+HTTP:PUT: localhost:8080/user/updateUser/{user_id}
 
 Headers: Key = Content-Type, Value = application/json
 
