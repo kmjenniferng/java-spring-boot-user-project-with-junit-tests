@@ -7,7 +7,7 @@ The purpose of this project is to create 5 RESTful APIs to perform the following
 4. **Delete 1 user**
 5. **Update user name or user email**
 
-## Application Structure
+## Application Architecture
 
 <img src="https://github.com/kmjenniferng/java-spring-boot-user-project-with-junit-tests/blob/main/system_architecture.png">
 
