@@ -1,4 +1,4 @@
-# Creating RESTful APIs using Java, Spring Boot and MySQL database with JUnit tests
+# Creating RESTful APIs with JUnit tests using Java, Spring Boot, MySQL database and Mockito
 
 The purpose of this project is to create 5 RESTful APIs to perform the following actions in MySQL database.
 1. **Add a user**
