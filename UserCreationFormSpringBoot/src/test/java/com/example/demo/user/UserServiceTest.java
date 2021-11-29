@@ -10,9 +10,9 @@ import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import com.example.demo.User;
-import com.example.demo.UserRepository;
-import com.example.demo.UserService;
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepository;
+import com.example.demo.service.UserService;
 
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
